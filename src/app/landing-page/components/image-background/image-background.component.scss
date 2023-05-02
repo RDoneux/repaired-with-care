@@ -1,0 +1,32 @@
+@import 'index';
+
+div.image-background__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    margin-bottom: 42px;
+
+    .image-background__text {
+        position: absolute;
+        color: $text-colour;
+
+        z-index: 1;
+    }
+
+    .image-background__image {
+        width: 100%;
+        height: 60vh;
+        filter: brightness(.8)
+    }
+
+    .image-background__separator {
+        position: absolute;
+        bottom: -41px;
+        height: 90px;
+        width: 100%;
+        filter: drop-shadow(0px 4px 4px lightgrey) brightness(.97);
+    }
+}

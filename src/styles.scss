@@ -1,5 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-@import './styles/index.scss';
+
+@import './styles/index';
+
+@font-face {
+    font-family: 'media icons';
+    src: url("assets/fonts/social-media-circled.otf") format("opentype");
+}
 
 * {
     box-sizing: border-box;
@@ -7,4 +13,24 @@
 
 body {
     margin: 0;
+    background-color: $background-colour;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    font-family: 'Allura', cursive;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: $title-font-size;
+}
+
+h3 {
+    font-size: $sub-title-font-size
 }
