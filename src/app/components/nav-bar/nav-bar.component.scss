@@ -1,0 +1,40 @@
+@import 'index';
+
+.nav-bar__container {
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+
+    z-index: 1;
+
+    padding: 0 1rem 0 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .nav-bar__contact-number {
+        font-size: $sub-title-font-size;
+        color: $text-colour;
+    }
+
+    .nav-bar__nav-routes {
+        display: flex;
+        font-size: $sub-title-font-size;
+        color: $text-colour;
+
+        align-items: center;
+
+        span {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .nav-bar__UK-flag{
+            margin-left: 10px;
+            height: 20px;
+            border-radius: 3px;
+        }
+    }
+}
