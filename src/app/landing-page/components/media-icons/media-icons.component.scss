@@ -4,21 +4,25 @@
     display: flex;
     justify-content: space-between;
 
-    width: 90px;
+    width: 120px;
     position: fixed;
     bottom: 10px;
     left: 10px;
 
     span {
         font-family: 'media icons';
-        font-size: $text-content-font-size;
+        font-size: $sub-title-font-size;
         color: #7a7a7a;
         background-color: #4a9e8d;
         border-radius: 50%;
-        width: $text-content-font-size;
-        height: $text-content-font-size;
+        width: $sub-title-font-size;
+        height: $sub-title-font-size;
         transition: background-color 100ms linear;
         text-align: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         &:hover {
             background-color: #98ddcf;
