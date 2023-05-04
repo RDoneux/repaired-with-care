@@ -1,13 +1,15 @@
 <div class="nav-bar__container">
-  <div class="nav-bar__contact-number"><span>tel:07738295821</span></div>
+  <div class="nav-bar__contact-number">
+    <span routerLink="/" class="material-symbols-outlined"> home </span>
+  </div>
   <div class="nav-bar__nav-routes">
-    <span>Services</span>
+    <span routerLink="/services">Services</span>
     <app-vertical-divide></app-vertical-divide>
-    <span>Pricing</span>
+    <span routerLink="/pricing">Pricing</span>
     <app-vertical-divide></app-vertical-divide>
-    <span>Contact</span>
+    <span routerLink="/contact">Contact</span>
     <app-vertical-divide></app-vertical-divide>
-    <span>Testimonies</span>
+    <span routerLink="/testimonies">Testimonies</span>
     <img class="nav-bar__UK-flag" src="assets/images/UK-flag.svg" />
   </div>
 </div>
