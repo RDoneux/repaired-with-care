@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class LandingPageComponent {
 
+  titleText: string = 'Clothes Repaired With Care'
+  imageSource: string = 'assets/images/landing-page-background.jpg'
+
 }

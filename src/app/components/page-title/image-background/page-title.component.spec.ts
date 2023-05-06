@@ -1,18 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ImageBackgroundComponent } from './image-background.component';
+import { PageTitleComponent } from './page-title.component';
 
 describe('ImageBackgroundComponent', () => {
-  let component: ImageBackgroundComponent;
-  let fixture: ComponentFixture<ImageBackgroundComponent>;
+  let component: PageTitleComponent;
+  let fixture: ComponentFixture<PageTitleComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ImageBackgroundComponent ]
-    })
-    .compileComponents();
+      declarations: [PageTitleComponent],
+    }).compileComponents();
 
-    fixture = TestBed.createComponent(ImageBackgroundComponent);
+    fixture = TestBed.createComponent(PageTitleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
