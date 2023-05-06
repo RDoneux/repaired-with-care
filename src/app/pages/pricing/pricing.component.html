@@ -1,1 +1,14 @@
-<div class="pricing__container"></div>
+<div class="pricing__container">
+  <app-page-title
+    [titleText]="titleText"
+    [imageSrc]="imageSource"
+  ></app-page-title>
+  <div class="pricing__list-container">
+    <div class="pricing__list-wrapper">
+      <app-price-entry
+        *ngFor="let priceEntry of priceEntries"
+        [priceEntry]="priceEntry"
+      ></app-price-entry>
+    </div>
+  </div>
+</div>

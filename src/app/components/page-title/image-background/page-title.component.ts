@@ -6,6 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./page-title.component.scss'],
 })
 export class PageTitleComponent {
-  @Input() titleText: string | undefined = undefined;
-  @Input() imageSrc: string | undefined = undefined;
+  @Input({ required: true }) titleText!: string;
+  @Input({ required: true }) imageSrc!: string;
+  @Input() type: 'landing' | 'default' = 'default';
 }
