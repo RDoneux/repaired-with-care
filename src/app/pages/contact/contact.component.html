@@ -1,1 +1,66 @@
-<p>contact works!</p>
+<div class="contatct__container">
+  <app-page-title
+    [titleText]="titleText"
+    [imageSrc]="imageSource"
+  ></app-page-title>
+  <p class="contact__disclaimer">
+    If you would like to discuss a custom order, or make a general enquiry
+    please don't hesitate to contact us using the form below.
+  </p>
+
+  <form
+    class="contact__form"
+    #contactForm="ngForm"
+    (ngSubmit)="onSubmit(contactForm)"
+  >
+    <input
+      type="email"
+      ngModel
+      id="contactEmail"
+      name="contactEmail"
+      #contactEmail="ngModel"
+      title="Please provide a contact email so we can respond"
+      placeholder="Your Contact Mail"
+      pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-]+)(\.[a-zA-Z]{2,5}){1,2}$"
+      required
+    />
+    <app-validation-feedback
+      class="contact__error-feedback"
+      [model]="contactEmail"
+      [validationMessages]="[
+        { error: 'required', message: 'This field is required' },
+        { error: 'pattern', message: 'Email not recognised' }
+      ]"
+    ></app-validation-feedback>
+    <input
+      type="text"
+      ngModel
+      title="An optional subject title for your query"
+      id="subject"
+      name="subject"
+      placeholder="Message Subject"
+    />
+    <textarea
+      ngModel
+      id="messageBody"
+      title="Please provide a brief outline of your query"
+      placeholder="Message"
+      #messageBody="ngModel"
+      name="messageBody"
+      rows="5"
+      required
+    ></textarea>
+    <app-validation-feedback
+      class="contact__error-feedback"
+      [model]="messageBody"
+      [validationMessages]="[
+        { error: 'required', message: 'This field is required' }
+      ]"
+    ></app-validation-feedback>
+
+    <button type="submit">
+      <span class="text">Send</span>
+      <span class="material-symbols-outlined"> send </span>
+    </button>
+  </form>
+</div>

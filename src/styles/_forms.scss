@@ -1,0 +1,69 @@
+@import './variables';
+
+// FORM INPUTS
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border: none;
+    border-bottom: 1px solid $border-colour;
+    outline: none;
+    padding: .5rem 0;
+    margin-top: .5rem;
+
+    background-color: transparent;
+    font-family: 'Open Sans', sans-serif;
+    resize: none;
+
+    transition: border-color 150ms linear, background-color 150ms linear;
+
+    &.ng-invalid.ng-touched {
+        border-color: $danger-colour;
+        background-color: transparentize($danger-colour, .9);
+
+        +.contact__error-feedback {
+            opacity: 1;
+        }
+    }
+
+
+
+}
+
+button[type="submit"] {
+    border: none;
+    padding: .5rem;
+    border-radius: 3px;
+
+    font-size: $text-content-font-size;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #3f8a7b;
+
+    margin-top: .5rem;
+
+    transition: background-color 150ms linear;
+    color: $text-colour;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $accent-colour;
+    }
+
+    span.text {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+}
+
+.contact__error-feedback {
+    color: $danger-colour;
+    font-family: 'Open Sans', sans-serif;
+    font-size: $text-content-font-small;
+    transition: opacity 150ms linear;
+    opacity: 0;
+}

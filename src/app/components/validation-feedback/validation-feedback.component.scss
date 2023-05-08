@@ -1,0 +1,10 @@
+@import 'index';
+
+span {
+    display: inline-block;
+    height: $text-content-font-small;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: $text-content-font-small;
+    color: $danger-colour;
+}

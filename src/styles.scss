@@ -24,7 +24,8 @@ h3,
 h4,
 h5,
 h6,
-span {
+span,
+p {
     font-family: 'Allura', cursive;
     font-weight: 400;
 }
@@ -35,4 +36,9 @@ h1 {
 
 h3 {
     font-size: $sub-title-font-size
+}
+
+p {
+    color: $text-colour-secondary;
+    font-size: $text-content-font-size;
 }
