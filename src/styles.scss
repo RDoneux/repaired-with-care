@@ -9,6 +9,24 @@
 
 * {
     box-sizing: border-box;
+
+    &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #c5c5c5;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
 }
 
 body {
@@ -41,4 +59,14 @@ h3 {
 p {
     color: $text-colour-secondary;
     font-size: $text-content-font-size;
+}
+
+a {
+    pointer-events: all;
+    color: $accent-colour;
+    text-decoration: none;
+
+    &:hover{
+        color: $accent-colour-highlight;
+    }
 }

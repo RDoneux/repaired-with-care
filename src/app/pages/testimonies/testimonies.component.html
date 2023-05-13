@@ -1,1 +1,31 @@
-<p>testimonies works!</p>
+<div class="testimonies__container">
+  <app-page-title
+    [titleText]="titleText"
+    [imageSrc]="imageSource"
+  ></app-page-title>
+  <p>
+    We are very grateful for all of the positive feedback we've received. If you
+    would like to leave us some feedback, positive or negative, please
+    <a routerLink="/contact">click here.</a>
+  </p>
+
+  <div class="testimony-display-container">
+    <div class="navigation navigation-left" (click)="scrollLeft()">
+      <span class="material-symbols-outlined"> arrow_forward_ios </span>
+    </div>
+    <div
+      class="testimony-wrapper"
+      #testimonyWrapper
+      (mouseenter)="onMouseEnter()"
+      (mouseleave)="onMouseLeave()"
+    >
+      <app-testimony
+        *ngFor="let testimony of testimonies"
+        [testimony]="testimony"
+      ></app-testimony>
+    </div>
+    <div class="navigation" (click)="scrollRight()">
+      <span class="material-symbols-outlined"> arrow_forward_ios </span>
+    </div>
+  </div>
+</div>

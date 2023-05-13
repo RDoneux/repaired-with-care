@@ -1,0 +1,71 @@
+@import 'index';
+
+.testimonies__container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 95%;
+    pointer-events: none;
+
+    p {
+        font-family: 'OpenSans', sans-serif;
+    }
+
+    .testimony-display-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1 1 auto;
+
+        .navigation {
+            color: $accent-colour;
+            pointer-events: all;
+            height: 95%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 25px;
+            border-radius: 3px;
+            transition: background-color 150ms linear;
+
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                opacity: .3;
+                transition: opacity 150ms linear;
+            }
+
+            &.navigation-left span {
+                transform: rotateZ(180deg)
+            }
+
+            &:hover {
+                // color: $accent-colour-highlight;
+                background: transparentize(white, .7);
+                cursor: pointer;
+                span {
+                    opacity: 1;
+                }
+
+            }
+        }
+
+        .testimony-wrapper {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-auto-flow: column;
+            column-gap: 3.5%;
+            grid-auto-columns: 30%;
+
+            width: 70%;
+            height: 100%;
+            overflow-y: hidden;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
+    }
+}
