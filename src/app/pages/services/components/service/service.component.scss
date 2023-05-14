@@ -1,0 +1,40 @@
+@import 'index';
+
+:host {
+    width: 60%;
+}
+
+.service__container {
+    width: 100%;
+    padding: 2rem 1rem;
+    padding-bottom: .5rem;
+
+    color: $text-colour-secondary;
+    border-bottom: 1px solid $text-colour-secondary;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+
+    max-height: 75px;
+    overflow-y: hidden;
+
+    transition: max-height 200ms ease-out;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .service__label {
+        font-family: 'Open Sans'
+    }
+
+    .material-symbols-outlined {
+        justify-self: flex-end;
+    }
+
+    .service__description-wrapper {
+        grid-column: 1 / span 2;
+        padding-bottom: 16px;
+    }
+}

@@ -1,0 +1,11 @@
+<div
+  class="service__container"
+  (click)="toggleExpand()"
+  [ngStyle]="{ 'max-height': expanded ? componentHeight + 'px' : '75px' }"
+>
+  <span class="service__label">{{ service.label }}</span>
+  <span class="material-symbols-outlined"> add </span>
+  <div #descriptionWrapper class="service__description-wrapper">
+    {{ service.description }}
+  </div>
+</div>

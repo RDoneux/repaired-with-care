@@ -1,1 +1,12 @@
-<p>services works!</p>
+<div class="services__container">
+  <app-page-title
+    [titleText]="titleText"
+    [imageSrc]="imageSource"
+  ></app-page-title>
+  <div class="services__service-wrapper">
+    <app-service
+      *ngFor="let service of services"
+      [service]="service"
+    ></app-service>
+  </div>
+</div>
