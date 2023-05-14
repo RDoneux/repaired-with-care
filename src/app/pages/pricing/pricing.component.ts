@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IPriceEntry } from './components/price-entry/i-price-entry';
-
+import * as prices from '../../../assets/documents/prices.json'
 @Component({
   selector: 'app-pricing',
   templateUrl: './pricing.component.html',
@@ -19,6 +19,6 @@ export class PricingComponent {
     { service: 'Patch Repair', value: 7.5 },
     { service: 'Trouser Shortening', value: 6.35 },
     { service: 'Ironing (20 items)', value: 10.0 },
-    { service: 'Ironing (20 items with pickup service)', value: 15.0}
+    { service: 'Ironing (20 items with pickup service)', value: 15.0 },
   ];
 }
