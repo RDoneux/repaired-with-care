@@ -1,53 +1,78 @@
 @import 'index';
 
-.nav-bar__container {
-    position: fixed;
-    width: 100vw;
-    // height: 50px;
-
-    z-index: 1;
+.nav-bar__container,
+.nav-bar__burger-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
 
     padding: 0 1rem 0 1rem;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
 
-    .nav-bar__contact-number {
-        font-size: $sub-title-font-size;
-        color: $text-colour;
+    z-index: 1
+}
+
+@media only screen and (min-width: $laptop) {
+
+    .nav-bar__burger-container {
+        display: none;
     }
 
-    .material-symbols-outlined {
-        &:hover {
-            cursor: pointer;    
+    .nav-bar__container {
+
+        position: fixed;
+        justify-content: space-between;
+
+        .nav-bar__contact-number {
+            font-size: $sub-title-font-size;
+            color: $text-colour;
         }
 
-        font-size: $sub-title-font-size;
-        color: $text-colour;
-        font-variation-settings: 'FILL' 1,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 48
-    }
-
-    .nav-bar__nav-routes {
-        display: flex;
-        font-size: $sub-title-font-size;
-        color: $text-colour;
-
-        align-items: center;
-
-        span {
+        .material-symbols-outlined {
             &:hover {
                 cursor: pointer;
             }
+
+            font-size: $sub-title-font-size;
+            color: $text-colour;
+            font-variation-settings: 'FILL' 1,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
         }
 
-        .nav-bar__UK-flag {
-            margin-left: 10px;
-            height: 20px;
-            border-radius: 3px;
+        .nav-bar__nav-routes {
+            display: flex;
+            font-size: $sub-title-font-size;
+            color: $text-colour;
+
+            align-items: center;
+
+            span {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .nav-bar__UK-flag {
+                margin-left: 10px;
+                height: 20px;
+                border-radius: 3px;
+            }
         }
+    }
+}
+
+@media only screen and (max-width: $laptop) {
+    .nav-bar__container {
+        display: none;
+    }
+
+    .nav-bar__burger-container {
+        justify-content: flex-end;
+        padding: 1rem;
     }
 }

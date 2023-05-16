@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 import { NavBarComponent } from './nav-bar.component';
 import { VerticalDivideComponent } from './components/vertical-divide/vertical-divide.component';
 import { RouterModule } from '@angular/router';
+import { BurgerMenuComponent } from './components/burger-menu/burger-menu.component';
 
 
 
 @NgModule({
   declarations: [
     NavBarComponent,
-    VerticalDivideComponent
+    VerticalDivideComponent,
+    BurgerMenuComponent
   ],
   imports: [
     CommonModule,
