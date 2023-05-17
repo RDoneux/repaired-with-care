@@ -9,6 +9,10 @@
     bottom: 10px;
     left: 10px;
 
+    @media only screen and (max-width: $laptop) {
+        left: calc(50% - 60px);
+    }
+
     span {
         font-family: 'media icons';
         font-size: $sub-title-font-size;
