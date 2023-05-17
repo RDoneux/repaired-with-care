@@ -1,0 +1,21 @@
+@import 'index';
+
+.styled-point__container {
+    width: 60px;
+    height: 60px;
+
+    background-color: $accent-colour;
+    color: $text-colour;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    font-size: $sub-title-font-size;
+
+    border-radius: 50%;
+    span:after{
+        content:"."
+    }
+}

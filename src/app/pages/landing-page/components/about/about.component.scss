@@ -11,26 +11,6 @@
     align-items: center;
     justify-content: center;
 
-    .title-background-divide {
-        width: 80%;
-        max-width: 400px;
-        background: $accent-colour;
-        height: 2px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        margin-bottom: 25px;
-
-        h3 {
-            text-align: center;
-            background: $background-colour;
-            color: $accent-colour;
-            width: 65%;
-            max-width: 225px;
-        }
-    }
-
     .about__content {
         font-size: $text-content-font-size;
         width: 60%;
