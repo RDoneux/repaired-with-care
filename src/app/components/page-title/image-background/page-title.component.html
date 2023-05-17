@@ -1,7 +1,8 @@
 <div class="page-title__wrapper">
   <h1 class="page-title__text">{{ titleText }}</h1>
   <div class="page-title__filter"></div>
-  <img class="page-title__image {{type}}" [src]="imageSrc" />
+  <img class="page-title__image desktop {{type}}" [src]="imageSourceDesktop" />
+  <img class="page-title__image mobile {{type}}" [src]="imageSourceMobile" />
   <img
     *ngIf="type === 'landing'"
     class="page-title__separator"

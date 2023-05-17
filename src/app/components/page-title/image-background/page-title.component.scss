@@ -15,6 +15,14 @@ div.page-title__wrapper {
         color: $text-colour;
 
         z-index: 1;
+
+        $font-size: $title-font-size;
+
+        @media only screen and (max-width: $laptop) {
+            text-align: center;
+            font-size: $title-font-size-mobile;
+            width: 290px;
+        }
     }
 
     .page-title__image {
@@ -30,6 +38,22 @@ div.page-title__wrapper {
             height: 40vh;
             min-height: 200px;
         }
+
+        &.mobile {
+            height: 100vh;
+            display: none;
+        }
+
+        @media only screen and (max-width: $laptop) {
+            &.mobile {
+                display: block;
+            }
+
+            &.desktop {
+                display: none;
+            }
+        }
+
     }
 
     .page-title__separator {
@@ -38,5 +62,9 @@ div.page-title__wrapper {
         height: 90px;
         width: 100%;
         filter: drop-shadow(0px 4px 4px lightgrey) brightness(.97);
+
+        @media only screen and (max-width: $laptop) {
+            display: none;
+        }
     }
 }
