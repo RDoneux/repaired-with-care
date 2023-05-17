@@ -12,7 +12,8 @@
     justify-content: center;
 
     .title-background-divide {
-        width: 400px;
+        width: 80%;
+        max-width: 400px;
         background: $accent-colour;
         height: 2px;
         display: flex;
@@ -25,7 +26,8 @@
             text-align: center;
             background: $background-colour;
             color: $accent-colour;
-            width: 225px;
+            width: 65%;
+            max-width: 225px;
         }
     }
 
