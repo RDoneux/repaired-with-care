@@ -1,0 +1,20 @@
+.inline-services__container {
+    height: 100vh;
+    padding: 2rem;
+    padding-top: 4rem;
+
+    display: flex;
+    flex-direction: column;
+
+    .inline-services__service-wrapper {
+        display: grid;
+        grid-template-columns: 47% 47%;
+        column-gap: 6%;
+        row-gap: 30px;
+
+        margin: 2rem .5rem;
+
+        flex: 1 1 auto;
+
+    }
+}

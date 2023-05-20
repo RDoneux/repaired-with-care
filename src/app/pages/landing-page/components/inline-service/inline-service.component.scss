@@ -1,0 +1,29 @@
+@import 'index';
+
+.inline-service__container {
+    box-shadow: 3px 3px 3px transparentize(black, .8);
+    width: 100%;
+    height: 100%;
+
+    background-color: #e9e9e9;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 3px;
+    overflow: hidden;
+
+    .inline-service__image {
+        height: 80%;
+        object-fit: cover;
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .inline-service__title {
+        font-size: $sub-title-font-size;
+        text-align: center;
+        margin: 0;
+
+    }
+}

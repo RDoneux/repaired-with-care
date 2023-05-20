@@ -9,6 +9,8 @@ import { PageTitleModule } from 'src/app/components/page-title/page-title.module
 import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
 import { StyledPointComponent } from './components/styled-point/styled-point.component';
 import { HeadingModule } from 'src/app/components/heading/heading.module';
+import { InlineServicesComponent } from './components/inline-services/inline-services.component';
+import { InlineServiceComponent } from './components/inline-service/inline-service.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { HeadingModule } from 'src/app/components/heading/heading.module';
     MediaIconsComponent,
     HowItWorksComponent,
     StyledPointComponent,
+    InlineServicesComponent,
+    InlineServiceComponent,
   ],
   imports: [
     CommonModule,

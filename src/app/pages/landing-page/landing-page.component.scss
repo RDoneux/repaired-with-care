@@ -1,17 +1,30 @@
 @import 'index';
 
-app-about {
-    display: block;
+@media only screen and (min-width: $laptop) {
+    app-about {
+        display: block;
+    }
 
-    @media only screen and (max-width: $laptop) {
+    app-how-it-works {
+        display: none;
+    }
+
+    app-inline-services {
         display: none;
     }
 }
 
-app-how-it-works {
-    display: none;
 
-    @media only screen and (max-width: $laptop) {
+@media only screen and (max-width: $laptop) {
+    app-about {
+        display: none;
+    }
+
+    app-how-it-works {
+        display: block;
+    }
+
+    app-inline-services {
         display: block;
     }
 }

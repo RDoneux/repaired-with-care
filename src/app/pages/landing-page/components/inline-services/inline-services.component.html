@@ -1,0 +1,10 @@
+<section class="inline-services__container">
+  <app-heading [text]="headingText"></app-heading>
+  <div class="inline-services__service-wrapper">
+    <app-inline-service
+      *ngFor="let service of services"
+      [title]="service.title"
+      [imageUrl]="service.imageUrl"
+    ></app-inline-service>
+  </div>
+</section>
